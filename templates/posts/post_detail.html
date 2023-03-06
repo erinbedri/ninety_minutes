@@ -1,0 +1,9 @@
+{% extends "common/base.html" %}
+
+{% block content %}
+<h1>{{ post.title }}</h1>
+<p>{{ post.text|linebreaks  }}</p>
+<p>Author: {{ post.author }}</p>
+<p>Published: {{ post.created_at|date }}</p>
+{% endblock content %}
+
